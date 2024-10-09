@@ -6,7 +6,7 @@ body {
   background-color: #f4f4f4;
   color: #333;
   padding-top: 70px; /* To make space for the fixed navbar */
-  background-image: url('images/Home.jpeg'); /* Replace with your image path */
+  background-image: url('images/Home.jpeg'); /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -70,4 +70,5 @@ footer {
   background-color: #45a049;
   border-color: #45a049;
 }
+
 
