@@ -1,81 +1,66 @@
-/* Custom Styles with Bootstrap Integration */
-
-/* Body styles */
+/* Add custom styles for a modern look */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
   color: #333;
-  padding-top: 70px; /* To make space for the fixed navbar */
 }
 
-/* Content container styles */
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+/* Jumbotron */
+.jumbotron {
+  background: linear-gradient(135deg, #1E90FF, #00BFFF);
+  color: white;
+  padding: 6rem 1rem;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-in-out;
 }
 
-/* Header styles */
-h1 {
-  color: #1E90FF; /* Blue Color for general headings */
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-/* Jumbotron heading style */
 .jumbotron h1 {
-  color: #fff !important; /* White color for the 'Welcome to My Portfolio' text */
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-/* Paragraph styles */
-p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+/* Cards Section */
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Footer styles */
-footer {
-  margin-top: 30px;
-  color: #888;
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* Navbar custom styling */
-.navbar {
-  background-color: #1E90FF !important; /* Blue navbar */
-}
-
-.navbar-brand, .nav-link {
-  color: #fff !important;
-}
-
-.nav-link:hover {
-  color: #add8e6 !important; /* Light blue hover color */
-}
-
-/* Button styles */
-.btn-primary {
-  background-color: #1E90FF; /* Blue button background */
-  border-color: #1E90FF;
-}
-
-.btn-primary:hover {
-  background-color: #4682B4; /* Darker blue on hover */
-  border-color: #4682B4;
-}
-
-/* Profile image styling */
+/* Profile Image */
 .profile-img {
-  width: 180px;
-  height: 230px;
-  border-radius: 50% / 60%;
+  width: 160px;
+  height: 200px;
+  border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  margin-bottom: 20px;
-  background-color: transparent;
-  padding: 0;
+  margin-bottom: 2rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+  background-color: #1E90FF;
+  color: white;
+  padding: 2rem 0;
+}
+
+footer a {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
