@@ -21,9 +21,14 @@ body {
 
 /* Header styles */
 h1 {
-  color: #4CAF50;
+  color: #1E90FF; /* Blue Color for general headings */
   font-size: 2.5rem;
   margin-bottom: 20px;
+}
+
+/* Jumbotron heading style */
+.jumbotron h1 {
+  color: #fff !important; /* White color for the 'Welcome to My Portfolio' text */
 }
 
 /* Paragraph styles */
@@ -40,7 +45,7 @@ footer {
 
 /* Navbar custom styling */
 .navbar {
-  background-color: #4CAF50 !important;
+  background-color: #1E90FF !important; /* Blue navbar */
 }
 
 .navbar-brand, .nav-link {
@@ -48,28 +53,29 @@ footer {
 }
 
 .nav-link:hover {
-  color: #f9f9f9 !important;
+  color: #add8e6 !important; /* Light blue hover color */
 }
 
 /* Button styles */
 .btn-primary {
-  background-color: #4CAF50;
-  border-color: #4CAF50;
+  background-color: #1E90FF; /* Blue button background */
+  border-color: #1E90FF;
 }
 
 .btn-primary:hover {
-  background-color: #45a049;
-  border-color: #45a049;
+  background-color: #4682B4; /* Darker blue on hover */
+  border-color: #4682B4;
 }
 
 /* Profile image styling */
 .profile-img {
   width: 180px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: contain;
+  height: 230px;
+  border-radius: 50% / 60%;
+  object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   margin-bottom: 20px;
   background-color: transparent;
   padding: 0;
 }
+
