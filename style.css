@@ -61,32 +61,13 @@ footer {
   background-color: #45a049;
   border-color: #45a049;
 }
-/* Footer styles */
-footer {
-  margin-top: 30px;
-  color: #888;
-}
 
-/* Navbar custom styling */
-.navbar {
-  background-color: #4CAF50 !important;
-}
-
-.navbar-brand, .nav-link {
-  color: #fff !important;
-}
-
-.nav-link:hover {
-  color: #f9f9f9 !important;
-}
-
-/* Button styles */
-.btn-primary {
-  background-color: #4CAF50;
-  border-color: #4CAF50;
-}
-
-.btn-primary:hover {
-  background-color: #45a049;
-  border-color: #45a049;
+/* Profile image styling */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
 }
