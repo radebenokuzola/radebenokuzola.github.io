@@ -20,6 +20,11 @@ body {
   font-weight: 700;
 }
 
+/* For the paragraph inside the Jumbotron */
+.jumbotron p {
+  text-align: center; /* Keeps the text centered as you wanted */
+}
+
 /* Cards Section */
 .card {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -52,9 +57,9 @@ footer a {
   text-decoration: underline;
 }
 
-/* Text justification */
-p {
-  text-align: justify; /* Distribute text evenly between margins */
+/* Text justification ONLY for the About Me paragraphs */
+.about-me-section p {
+  text-align: justify;
 }
 
 /* Animations */
