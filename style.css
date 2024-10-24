@@ -98,7 +98,7 @@ footer a {
 
 /* Navbar toggler button */
 .navbar-toggler {
-  border-color: #1E90FF; /* Dark blue border */
+  border-color: #333; /* Shaded black border */
 }
 
 /* Navbar toggler icon (hamburger icon) */
