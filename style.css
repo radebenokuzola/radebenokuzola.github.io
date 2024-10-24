@@ -5,10 +5,30 @@ body {
   color: #333;
 }
 
-/* Skills Page */
+/* Jumbotron */
+.jumbotron {
+  background: linear-gradient(135deg, #1E90FF, #00BFFF);
+  color: white;
+  padding: 6rem 1rem;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.jumbotron h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* For the paragraph inside the Jumbotron */
+.jumbotron p {
+  text-align: center; /* Keeps the text centered as you wanted */
+}
+
+/* Skills section */
 .skills-section h2 {
   font-size: 2rem;
-  color: #007BFF;
+  color: #1E90FF;
   margin-bottom: 1rem;
 }
 
@@ -21,27 +41,47 @@ body {
   background-color: white;
   padding: 1rem;
   margin-bottom: 10px;
-  border: 2px solid #007BFF;
+  border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .skills-section ul li:hover {
   transform: translateY(-5px);
-  background-color: #e6f7ff;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .skills-section ul li::before {
   content: "\2713"; /* Checkmark icon */
-  color: #007BFF;
+  color: #1E90FF;
   font-weight: bold;
   margin-right: 10px;
 }
 
+/* Cards Section */
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image */
+.profile-img {
+  width: 200px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Footer */
 footer {
-  background-color: #007BFF;
+  background-color: #1E90FF;
   color: white;
   padding: 2rem 0;
 }
@@ -49,13 +89,14 @@ footer {
 footer a {
   color: #f0f0f0;
   text-decoration: underline;
-  transition: color 0.2s;
 }
 
-footer a:hover {
-  color: #dfefff;
+/* Text justification ONLY for the About Me paragraphs */
+.about-me-section p {
+  text-align: justify;
 }
 
+/* Animations */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -66,3 +107,4 @@ footer a:hover {
     transform: translateY(0);
   }
 }
+
