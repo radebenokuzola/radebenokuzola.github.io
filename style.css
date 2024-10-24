@@ -1,62 +1,43 @@
-/* Add custom styles for a modern About Me page */
+/* Add custom styles for a modern look */
 body {
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #87CEFA, #f0f8ff); /* Sky blue gradient background */
+  background-color: #f0f0f0;
   color: #333;
-  margin: 0;
-  padding: 0;
 }
 
-/* Content container */
-.content-container {
-  padding: 4rem 2rem;
-  background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
-  border-radius: 10px;
-  margin-top: 3rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for content box */
-}
-
-/* Headings */
-h1, h3 {
-  color: #1E90FF; /* Bright blue for headings */
-  text-align: center;
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h3 {
-  font-size: 1.8rem;
-  margin-top: 2rem;
-}
-
-/* Paragraphs */
-p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
-  color: #333;
-  text-align: justify; /* Justify text for a balanced look */
-}
-
-/* Button styling */
-a.btn-primary {
-  background-color: #1E90FF;
-  border-color: #1E90FF;
+/* Jumbotron */
+.jumbotron {
+  background: linear-gradient(135deg, #1E90FF, #00BFFF);
   color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease-in-out;
+  padding: 6rem 1rem;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-in-out;
 }
 
-a.btn-primary:hover {
-  background-color: #007BFF;
-  border-color: #007BFF;
-  color: white;
+.jumbotron h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* Cards Section */
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image */
+.profile-img {
+  width: 160px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Footer */
@@ -64,7 +45,6 @@ footer {
   background-color: #1E90FF;
   color: white;
   padding: 2rem 0;
-  text-align: center;
 }
 
 footer a {
@@ -83,4 +63,3 @@ footer a {
     transform: translateY(0);
   }
 }
-
