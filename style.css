@@ -3,81 +3,59 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #f0f0f0;
   color: #333;
-  margin: 0;
+}
+
+/* Skills Page */
+.skills-section h2 {
+  font-size: 2rem;
+  color: #007BFF;
+  margin-bottom: 1rem;
+}
+
+.skills-section ul {
+  list-style: none;
   padding: 0;
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #007BFF;
-}
-
-.navbar-brand, .nav-link {
-  color: #fff !important;
-}
-
-.nav-link:hover {
-  color: #f0f0f0 !important;
-}
-
-/* Main content container */
-.container {
-  margin-top: 40px;
-}
-
-/* Title styles */
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #007BFF;
-  text-align: center;
-  margin-bottom: 2rem;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-/* Form styles */
-form {
-  background-color: #fff;
-  padding: 20px;
+.skills-section ul li {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 10px;
+  border: 2px solid #007BFF;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-form .form-control {
-  border-radius: 5px;
-  border: 1px solid #ddd;
+.skills-section ul li:hover {
+  transform: translateY(-5px);
+  background-color: #e6f7ff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-form .form-label {
-  color: #333;
+.skills-section ul li::before {
+  content: "\2713"; /* Checkmark icon */
+  color: #007BFF;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
-form button[type="submit"] {
-  background-color: #007BFF;
-  border-color: #007BFF;
-  color: #fff;
-  transition: background-color 0.3s ease-in-out;
-}
-
-form button[type="submit"]:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
-
-/* Footer styles */
 footer {
   background-color: #007BFF;
   color: white;
   padding: 2rem 0;
-  margin-top: 40px;
 }
 
 footer a {
   color: #f0f0f0;
   text-decoration: underline;
+  transition: color 0.2s;
 }
 
-/* Animation */
+footer a:hover {
+  color: #dfefff;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -88,19 +66,3 @@ footer a {
     transform: translateY(0);
   }
 }
-
-/* reCAPTCHA widget */
-.g-recaptcha {
-  margin-top: 15px;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-  form {
-    padding: 15px;
-  }
-}
-
