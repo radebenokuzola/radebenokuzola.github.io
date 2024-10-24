@@ -52,6 +52,11 @@ footer a {
   text-decoration: underline;
 }
 
+/* Text justification */
+p {
+  text-align: justify; /* Distribute text evenly between margins */
+}
+
 /* Animations */
 @keyframes fadeIn {
   0% {
