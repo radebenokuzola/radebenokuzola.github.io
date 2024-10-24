@@ -22,7 +22,7 @@ body {
 
 /* For the paragraph inside the Jumbotron */
 .jumbotron p {
-  text-align: center; /* Keeps the text centered as you wanted */
+  text-align: center;
 }
 
 /* Skills section */
@@ -53,7 +53,7 @@ body {
 }
 
 .skills-section ul li::before {
-  content: "\2713"; /* Checkmark icon */
+  content: "\2713";
   color: #1E90FF;
   font-weight: bold;
   margin-right: 10px;
