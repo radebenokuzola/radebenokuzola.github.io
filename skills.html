@@ -53,75 +53,123 @@
   <!-- Main Content -->
   <div class="container mt-5">
     <h1 class="text-center mb-5">Skills</h1>
-    <div class="accordion" id="skillsAccordion">
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="skills-section">
+          <h2 class="text-primary mb-3">Technical Skills</h2>
+          <div class="accordion" id="technicalSkillsAccordion">
+            <!-- Cybersecurity Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="cybersecurityHeading">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cybersecurityCollapse" aria-expanded="true" aria-controls="cybersecurityCollapse">
+                  Cybersecurity
+                </button>
+              </h2>
+              <div id="cybersecurityCollapse" class="accordion-collapse collapse show" aria-labelledby="cybersecurityHeading" data-bs-parent="#technicalSkillsAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Network Security: Implementing firewalls, VPNs, and IDS/IPS</li>
+                    <li>Vulnerability Assessment & Penetration Testing: Conducting security audits, ethical hacking, and risk assessments</li>
+                    <li>SIEM: Using Splunk, QRadar, LogRhythm for threat detection</li>
+                    <li>Endpoint Security: Antivirus, anti-malware protection</li>
+                    <li>Incident Response: Handling breaches and recovery</li>
+                    <li>IAM: Role and policy management</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Data Analysis Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="dataAnalysisHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dataAnalysisCollapse" aria-expanded="false" aria-controls="dataAnalysisCollapse">
+                  Data Analysis
+                </button>
+              </h2>
+              <div id="dataAnalysisCollapse" class="accordion-collapse collapse" aria-labelledby="dataAnalysisHeading" data-bs-parent="#technicalSkillsAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Data Cleaning & Preparation with Python and SQL</li>
+                    <li>Statistical Analysis: Hypothesis testing, regression analysis</li>
+                    <li>Data Visualization: Tableau, Power BI</li>
+                    <li>Machine Learning Basics: Understanding supervised/unsupervised learning models and applying them in tools like scikit-learn</li>
+                    <li>Big Data Processing: Hadoop, Spark and data warehousing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Artificial Intelligence Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="aiHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aiCollapse" aria-expanded="false" aria-controls="aiCollapse">
+                  Artificial Intelligence
+                </button>
+              </h2>
+              <div id="aiCollapse" class="accordion-collapse collapse" aria-labelledby="aiHeading" data-bs-parent="#technicalSkillsAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Machine Learning Algorithms: Regression, decision trees</li>
+                    <li>Deep Learning with TensorFlow, PyTorch</li>
+                    <li>Ethics in AI: Awareness of bias, fairness, and ethical considerations in AI applications</li>
+                    <li>AI Model Deployment with Flask and cloud platforms</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Cloud Computing Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="cloudHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cloudCollapse" aria-expanded="false" aria-controls="cloudCollapse">
+                  Cloud Computing (Azure)
+                </button>
+              </h2>
+              <div id="cloudCollapse" class="accordion-collapse collapse" aria-labelledby="cloudHeading" data-bs-parent="#technicalSkillsAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Azure Fundamentals</li>
+                    <li>Azure DevOps: CI/CD pipelines</li>
+                    <li>Azure Administrator</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Software Development Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="softwareDevHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#softwareDevCollapse" aria-expanded="false" aria-controls="softwareDevCollapse">
+                  Software Development
+                </button>
+              </h2>
+              <div id="softwareDevCollapse" class="accordion-collapse collapse" aria-labelledby="softwareDevHeading" data-bs-parent="#technicalSkillsAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Programming Languages: Proficiency in Python, Java, JavaScript, C#, and Ruby</li>
+                    <li>Front-End Development: HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue.js</li>
+                    <li>Back-End Development: Working with server-side languages (e.g., Node.js, Django for Python, Spring for Java) and APIs</li>
+                    <li>Databases: SQL (MySQL, PostgreSQL) and NoSQL (MongoDB, Firebase), along with CRUD operations</li>
+                    <li>Version Control: Git, GitHub/GitLab for tracking changes, branching, and collaborating</li>
+                    <li>Debugging and Testing: Proficiency with debugging tools, unit testing (JUnit, pytest), and integration testing</li>
+                    <li>Deployment: Familiarity with CI/CD pipelines, Docker for containerization, and deploying on cloud platforms (AWS, Azure, or Heroku)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       
-      <!-- Cybersecurity Section -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingCybersecurity">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseCybersecurity" aria-expanded="false" aria-controls="collapseCybersecurity">
-            Cybersecurity
-          </button>
-        </h2>
-        <div id="collapseCybersecurity" class="accordion-collapse collapse" aria-labelledby="headingCybersecurity"
-          data-bs-parent="#skillsAccordion">
-          <div class="accordion-body">
-            Network Security: Implementing firewalls, VPNs, and Intrusion Detection/Prevention Systems (IDS/IPS)<br>
-            Vulnerability Assessment & Penetration Testing: Conducting security audits, ethical hacking, and risk assessments<br>
-            Security Information and Event Management (SIEM): Using tools like Splunk, IBM QRadar, and LogRhythm for threat detection<br>
-            Endpoint Security: Configuring and managing antivirus, anti-malware, and other endpoint protection software<br>
-            Incident Response: Handling security breaches, containment, recovery, and root cause analysis<br>
-            Identity & Access Management (IAM): Managing roles, policies, and permissions (e.g., using Okta, Active Directory)<br>
-            Encryption Techniques: Data-at-rest, data-in-transit encryption, and PKI management<br>
-            Compliance & Regulations: Familiarity with GDPR, HIPAA, PCI-DSS, and ISO/IEC 27001 standards
-          </div>
+      <!-- Soft Skills Section -->
+      <div class="col-md-6">
+        <div class="skills-section">
+          <h2 class="text-primary mb-3">Soft Skills</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Leadership</li>
+            <li class="list-group-item">Communication</li>
+            <li class="list-group-item">Problem Solving</li>
+            <li class="list-group-item">Teamwork</li>
+          </ul>
         </div>
       </div>
-
-      <!-- Data Analysis Section -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingDataAnalysis">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseDataAnalysis" aria-expanded="false" aria-controls="collapseDataAnalysis">
-            Data Analysis
-          </button>
-        </h2>
-        <div id="collapseDataAnalysis" class="accordion-collapse collapse" aria-labelledby="headingDataAnalysis"
-          data-bs-parent="#skillsAccordion">
-          <div class="accordion-body">
-            Data Cleaning & Preparation: Using Python, R, or SQL for data wrangling and preprocessing<br>
-            Statistical Analysis: Hypothesis testing, regression analysis, ANOVA, and probability models<br>
-            Data Visualization: Creating charts and dashboards with Tableau, Power BI, or Matplotlib<br>
-            SQL & Database Management: Writing complex queries, stored procedures, and managing databases<br>
-            Machine Learning Basics: Understanding supervised/unsupervised learning models and applying them in tools like scikit-learn<br>
-            Big Data Processing: Familiarity with Hadoop, Spark, and data warehousing<br>
-            Business Intelligence: Creating KPI reports, dashboards, and trend analysis to support decision-making
-          </div>
-        </div>
-      </div>
-
-      <!-- Software Developing Section -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSoftwareDevelopment">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseSoftwareDevelopment" aria-expanded="false" aria-controls="collapseSoftwareDevelopment">
-            Software Development
-          </button>
-        </h2>
-        <div id="collapseSoftwareDevelopment" class="accordion-collapse collapse" aria-labelledby="headingSoftwareDevelopment"
-          data-bs-parent="#skillsAccordion">
-          <div class="accordion-body">
-            Programming Languages: Proficiency in Python, Java, JavaScript, C#, and Ruby.<br>
-            Front-End Development: HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue.js<br>
-            Back-End Development: Working with server-side languages (e.g., Node.js, Django for Python, Spring for Java) and APIs<br>
-            Databases: SQL (MySQL, PostgreSQL) and NoSQL (MongoDB, Firebase), along with CRUD operations<br>
-            Version Control: Git, GitHub/GitLab for tracking changes, branching, and collaborating<br>
-            Debugging and Testing: Proficiency with debugging tools, unit testing (JUnit, pytest), and integration testing<br>
-            Deployment: Familiarity with CI/CD pipelines, Docker for containerization, and deploying on cloud platforms (AWS, Azure, or Heroku)
-          </div>
-        </div>
-      </div>
-      
     </div>
   </div>
 
@@ -137,4 +185,3 @@
 </body>
 
 </html>
-
