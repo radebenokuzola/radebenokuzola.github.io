@@ -53,18 +53,91 @@
   <!-- Main Content -->
   <div class="container mt-5">
     <h1 class="text-center mb-5">Skills</h1>
+    
     <div class="row">
       <div class="col-md-6">
         <div class="skills-section">
           <h2 class="text-primary mb-3">Technical Skills</h2>
-          <ul class="list-group">
-            <li class="list-group-item">Cybersecurity</li>
-            <li class="list-group-item">Data Analysis</li>
-            <li class="list-group-item">Artificial Intelligence</li>
-            <li class="list-group-item">Cloud Computing (Azure)</li>
-          </ul>
+          <div class="accordion" id="technicalSkillsAccordion">
+            <!-- Cybersecurity Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="cybersecurityHeading">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cybersecurityCollapse" aria-expanded="true" aria-controls="cybersecurityCollapse">
+                  Cybersecurity
+                </button>
+              </h2>
+              <div id="cybersecurityCollapse" class="accordion-collapse collapse show" aria-labelledby="cybersecurityHeading" data-bs-parent="#technicalSkillsAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Network Security: Implementing firewalls, VPNs, and IDS/IPS</li>
+                    <li>Vulnerability Assessment & Penetration Testing: Conducting security audits, ethical hacking, and risk assessments</li>
+                    <li>SIEM: Using Splunk, QRadar, LogRhythm for threat detection</li>
+                    <li>Endpoint Security: Antivirus, anti-malware protection</li>
+                    <li>Incident Response: Handling breaches and recovery</li>
+                    <li>IAM: Role and policy management</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Data Analysis Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="dataAnalysisHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dataAnalysisCollapse" aria-expanded="false" aria-controls="dataAnalysisCollapse">
+                  Data Analysis
+                </button>
+              </h2>
+              <div id="dataAnalysisCollapse" class="accordion-collapse collapse" aria-labelledby="dataAnalysisHeading" data-bs-parent="#technicalSkillsAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Data Cleaning & Preparation with Python and SQL</li>
+                    <li>Statistical Analysis: Hypothesis testing, regression analysis</li>
+                    <li>Data Visualization: Tableau, Power BI</li>
+                    <li>Machine Learning Basics: Understanding supervised/unsupervised learning models and applying them in tools like scikit-learn</li>
+                    <li>Big Data Processing: Hadoop, Spark and data warehousing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Artificial Intelligence Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="aiHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aiCollapse" aria-expanded="false" aria-controls="aiCollapse">
+                  Artificial Intelligence
+                </button>
+              </h2>
+              <div id="aiCollapse" class="accordion-collapse collapse" aria-labelledby="aiHeading" data-bs-parent="#technicalSkillsAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Machine Learning Algorithms: Regression, decision trees</li>
+                    <li>Deep Learning with TensorFlow, PyTorch</li>
+                    <li>Ethics in AI: Awareness of bias, fairness, and ethical considerations in AI applications</li>
+                    <li>AI Model Deployment with Flask and cloud platforms</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Cloud Computing Section -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="cloudHeading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cloudCollapse" aria-expanded="false" aria-controls="cloudCollapse">
+                  Cloud Computing (Azure)
+                </button>
+              </h2>
+              <div id="cloudCollapse" class="accordion-collapse collapse" aria-labelledby="cloudHeading" data-bs-parent="#technicalSkillsAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Azure Fundamentals</li>
+                    <li>Azure DevOps: CI/CD pipelines</li>
+                    <li>Azure Administrator</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      
+      <!-- Soft Skills Section -->
       <div class="col-md-6">
         <div class="skills-section">
           <h2 class="text-primary mb-3">Soft Skills</h2>
