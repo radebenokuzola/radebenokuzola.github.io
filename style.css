@@ -92,6 +92,69 @@ body {
   color: #333;
 }
 
+
+/* Accordion Button Styling */
+.accordion-button {
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #00BFFF;
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Accordion Item Styling */
+.accordion-item {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Body Styling */
+.accordion-body {
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Social Links Section */
+.social-links h3 {
+  font-size: 1.5rem;
+  color: #1E90FF;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.social-links p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.social-links .btn-primary {
+  background-color: #1E90FF;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-links .btn-primary:hover {
+  background-color: #00BFFF;
+  transform: translateY(-2px);
+}
+
+
 /* Cards Section */
 .card {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
